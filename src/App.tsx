@@ -10,12 +10,12 @@ function App() {
         <>
             <div>
                 <h1 className='p-2 text-orange-600'>Typescript + React</h1>
+                <hr className='' />
                 <hr />
-                <hr />
-                <h1>Study Topics for Web Development</h1>
+                <h1 className='p-2 text-3xl'>Topics for Web Development</h1>
 
                 <hr />
-                <div className='flex flex-col justify-evenly bg-slate-200'>
+                <div className='m-4 p-4 flex flex-col justify-evenly bg-slate-200 border rounded-lg'>
                     {data.map((item) => (
                         <TopicCard key={item.id} {...item} />
                     ))}
