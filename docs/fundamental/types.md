@@ -23,6 +23,11 @@ Important:
 -   The **any** types is a dynamic type that can be set to any other type.
 -   **any** type can be set to anything or reset to anything.
 -   Compiler will not check it for you. means, during development it will not provide you with any warning regarding the variable.
--   So, if possible avoid **any** type.
-    -   **WHEN To USE**
-    -   In large application, It depends on multiple languages, external data so, it can't be possible to know every types the application will get then **any** will be the savior or escape hatch.
+-   So, if possible avoid **any** type. - **WHEN To USE** - In large application, It depends on multiple languages, external data so, it can't be possible to know every types the application will get then **any** will be the savior or escape hatch.
+
+Practice code in Playground
+[**any** type example](https://www.typescriptlang.org/play?#code/DYUwLgBAtgngcgQyiAXBBA7GEC8EBEAggG4CWAVqWPgFA0DGA9hgM6OgB0wjA5gBSxEyAJR1BSELggBGAEwBmACwBWOk1bsQXXgPgTRNccikYQAdwiEATlYQw+oo1oAOAVxYALPvgAqMZ5IwjK4QGBIQHiBWWvii6myc3PxOwkA)
+
+### The **unknown** type
+
+-

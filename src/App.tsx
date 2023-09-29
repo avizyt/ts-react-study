@@ -1,4 +1,5 @@
 import "./App.css";
+import LogIn from "./components/LogIn";
 
 import TopicCard from "./components/TopicCard";
 import { topic } from "./constants";
@@ -19,6 +20,9 @@ function App() {
                     {data.map((item) => (
                         <TopicCard key={item.id} {...item} />
                     ))}
+                </div>
+                <div className='m-4'>
+                    <LogIn />
                 </div>
             </div>
         </>
