@@ -30,4 +30,33 @@ Practice code in Playground
 
 ### The **unknown** type
 
--
+-   The **unknown** type was introduced in TS version 3, It shares some similarities with the **any** type.
+-   Variables of the **unknown** type can initially hold values of any data type adn can be changes to other types later on.
+-   Unlike the **any** type, you can't directly access or modify members of a variable with the unknown type, nor can you assign it to another without first checking its actual type. This enforces stronger type safety.
+
+Practice Code in Playground
+[**unknown** type example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgggtgOQK5wEYgE4C4JIHYDWeA9gO54QC8EAjAEwBQAxsXgM7GgB0wxA5gApYiFOgwBKBg2HI0mKhABEAT2JIIAQwwhchEuUXNWHbr0EzRmSdPiyxCvCFIQYGDBuUDJAem-RblhhcAA5IbAAWAnQAzD5+LOycIDz8QgFyElJQAGYQaSIZ0OxgGnhMIMS5ru7K4gDeDBD+BWIhYZExkgC+UgkmyWb5dlZAA)
+
+### The **union** type
+
+first take this example
+
+```typescript
+let writer = Math.random() > 0.5 ? "A novelist" : undefined;
+```
+
+Now , tell me what is the type of the writer, it could be either **undefined** or a **string**.
+
+-   This kind of either or type called a **union** type.
+-   With **union** type you does not need to know the type of a variable exactly but you can give the compiler multiple options to handle types of the variable.
+-   The **union** use pipe (|) to constitute different type.
+
+```typescript
+let writer: string | undefined;
+
+or;
+
+let writer: novelist | essayist | undefined;
+```
+
+NOTE: - The order in **union** types is not important _undefined_ before _string_ is same as _string_ before _undefined_
